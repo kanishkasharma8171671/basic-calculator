@@ -1,0 +1,48 @@
+#basic calcultaor
+def cal():
+  
+    def sum():
+        a=int(input("ENTER A NO 1:"))
+        b=int(input("ENTER A NO 2:"))
+        a+=b
+        print(a)
+    def sub():
+        a=int(input("ENTER A NO 1:"))
+        b=int(input("ENTER A NO 2:"))
+        a-=b
+        print(a) 
+    def mul():
+        a=int(input("ENTER A NO 1:"))
+        b=int(input("ENTER A NO 2:"))
+        a*=b
+        print(a)
+    def div():
+        a=int(input("ENTER A NO 1:"))
+        b=int(input("ENTER A NO 2:"))
+        a/=b
+        print(a)
+    while True:
+        print('''
+            A==sum
+            B==sub 
+            C==mul
+            D==div 
+            E==exit
+            ''') 
+        choice=input("ENTER THE CHOICE (A/B/C/D/E):")
+    
+        if choice=="A":
+            print(sum()) 
+        elif choice=="B":
+            print(sub())
+        elif choice=="C":
+            print(mul()) 
+        elif choice=="D":
+            print(div())
+        elif choice=="E":
+            break    
+    
+
+        else:
+            print("wrong choice")           
+cal()
